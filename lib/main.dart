@@ -216,7 +216,7 @@ class _MainAppState extends State<MainApp> {
                   ElevatedButton(
                     onPressed: () {
                       setState(() {
-                        controlVisor.text += ',';
+                        controlVisor.text += '.';
                       });
                     },
                     child: const Text(',',
@@ -266,7 +266,7 @@ class _MainAppState extends State<MainApp> {
                           "-": '-',
                           "*": '*',
                           "/": '/',
-                          ",": '.',
+                          ".": '.',
                         };
                         Expression exp = Expression.parse(controlVisor.text);
                         const evaluator = ExpressionEvaluator();
